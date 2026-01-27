@@ -1,4 +1,4 @@
-## gitについて
+# gitについて
 
 - gitとはファイルの管理システム。更新履歴を残しておける。
 - リポジトリの作成方法
@@ -8,7 +8,7 @@
 2 vscodeでファイル→フォルダーを開くから1で作成したフォルダを選択。
 
 
-- テキストの作成方法
+## テキストの作成方法
 
 1 アイコンクリックしてリポジトリの初期化
 
@@ -17,7 +17,7 @@
 
 2 ファイルを新規作成
 
-- コミット
+## コミット
 
 1 +マークからステージに上げる。もしくはターミナルでaddコマンド。ステージにあげるあげないで更新するファイルしないファイルを選択可能
 
@@ -25,7 +25,7 @@
 
 2 メッセージを入力してコミット。メッセージは必須。コマンド：git commit -m “[comment]”
 
-・githubへのアップロード
+## githubへのアップロード
 
 home→Repositories→New→名前などを入力してCreate repository
 
@@ -57,7 +57,7 @@ git push -u origin main
 
 - コマンド(よく使うもの。随時追加。)
 
-<u>ローカルにリポジトリを作成し、リモートにプッシュする</u>
+## ローカルにリポジトリを作成し、リモートにプッシュする
 
 git init
 
@@ -70,43 +70,65 @@ git remote add origin https://github.com/XXXX/XXXXXX.git
 git push -u origin master
 
 
-<u>ファイルの登録（コミットするため）</u>
+## ファイルの登録（コミットするため）
 
 git add <ファイル名>
 
 
-<u>ファイルの変更や追加をコミット</u>
+## ファイルの変更や追加をコミット
 
 git commit -m "コミットメッセージ"
 
 
-<u>ローカルの変更を確認する</u>
+## ローカルの変更を確認する
 
 git status
 
 
-<u>commitの変更履歴を見る</u>
+## commitの変更履歴を見る
 
 git log
 
 
-<u>リモートにpush</U>
+## リモートにpush
 
 git push origin <ブランチ名>
 
 
-- コラボレーション機能
+## ラボレーション機能
 
 repositries→共有したいフォルダ選択→setting→collaborations→add peapleからメアド入力で追加
 
 
-**参考サイト**
+## 直接mainにpushしてはいけない理由
+- 壊れたコードが混入しやすい
+- 誰が何をしたか追いにくく、prで履歴を可視化するため
+- レビューが行われないため、品質が低下する
+
+## Gitflowについて
+- お天気アプリ作成においては、main及びfeature/spalashブランチを作成。適切なブランチを作成し派生を考える。
+
+## お天気アプリのフロー
+1. mainブランチ作成
+2. 作業用のブランチ作成
+3. 作業用ブランチをプッシュ
+4. 作業用ブランチのプルリクエストを送る
+5. マージする
+
+## ブランチのプロテクト
+- 直pushを防ぐ。下記サイトを参考にする。
+- うまくプロテクトできないとき
+- Enforcement statusはActiveになっているか？
+- Branch targeting criteriaにmainブランチを追加しているか？
+- [参考サイト](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
+
+
+## 参考サイト
 
 サル先生のgit入門
 https://backlog.com/ja/git-tutorial/intro/01/
 
 gitコマンド
 https://qiita.com/2m1tsu3/items/6d49374230afab251337
-
 
 
