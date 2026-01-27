@@ -118,8 +118,8 @@ repositries→共有したいフォルダ選択→setting→collaborations→add
 ## ブランチのプロテクト
 - 直pushを防ぐ。下記サイトを参考にする。
 - うまくプロテクトできないとき
-- Enforcement statusはActiveになっているか？
-- Branch targeting criteriaにmainブランチを追加しているか？
+  - Enforcement statusはActiveになっているか？
+  - Branch targeting criteriaにmainブランチを追加しているか？
 - [参考サイト](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 
