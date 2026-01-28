@@ -108,10 +108,12 @@ repositries→共有したいフォルダ選択→setting→collaborations→add
 ## Gitflowについて
 - お天気アプリ作成においては、main及びfeature/spalashブランチを作成。適切なブランチを作成し派生を考える。
 
-## お天気アプリのフロー
+## アプリ開発時Gitのワークフロー
 1. mainブランチ作成
 2. 作業用のブランチ作成
+3. コードを書く
 3. 作業用ブランチをプッシュ
+4. ドラフトPR
 4. 作業用ブランチのプルリクエストを送る
 5. マージする
 
@@ -122,10 +124,22 @@ repositries→共有したいフォルダ選択→setting→collaborations→add
   - Branch targeting criteriaにmainブランチを追加しているか？
 - [参考サイト](https://docs.github.com/ja/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
+## 空コミット
+- git commit --allow-empty -m "メッセージ"
+- プルリクエストを出す準備として、
+- [参考サイト](https://qiita.com/katsukii/items/5368598cbecbaefd1ed8)
 
-## 参考サイト
+## 上流ブランチ
 
-サル先生のgit入門
+# VSCodeでGitマージする
+1. gitアイコンクリック
+2. 変更の箇所にカーソルを当てる
+3. 三点リーダー→ブランチ→マージ
+
+# マージのエラー
+- 競合の解決方法(あとで調べる)
+
+## サル先生のgit入門
 https://backlog.com/ja/git-tutorial/intro/01/
 
 gitコマンド
