@@ -78,3 +78,6 @@ Flutterには最初からボタン（ElevatedButtonなど）が用意されて�
 - 改行で終わっていない行は「未完成の行」 とみなされる
 - shell / CI / concat で事故を防げる 
 - 設定からfiles.insertFinalNewline": true を追加して設定する
+
+## フルスクリーンダイアログにモーダル遷移
+[参考サイト](https://scrapbox.io/Rutile3-Tech/%E3%80%90Flutter%E3%80%91%E3%83%95%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%80%E3%82%A4%E3%82%A2%E3%83%AD%E3%82%B0%E3%81%AB%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E9%81%B7%E7%A7%BB)
