@@ -74,4 +74,7 @@ Flutterには最初からボタン（ElevatedButtonなど）が用意されて�
 - [参考サイト](https://qiita.com/mkurom/items/bd0e2ae45d7afb5e02ec)
 
 ## ファイル末尾に改行を入れる理由
-- 
+- Git の diff がきれいになる 
+- 改行で終わっていない行は「未完成の行」 とみなされる
+- shell / CI / concat で事故を防げる 
+- 設定からfiles.insertFinalNewline": true を追加して設定する
